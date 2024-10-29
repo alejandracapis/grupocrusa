@@ -1,6 +1,6 @@
 import React from "react";
 import "./Inicio.css"
-import Slider from "../components/Slider/Slider";
+import Slider from "./slider/Slider";
 
 function Inicio() {
     function scrollDown() {
@@ -10,7 +10,7 @@ function Inicio() {
         <div className="home-container">
             <section className="item-one">
                 <video loop autoPlay muted className="one-video">
-                    <source src={require('./videos/bgvideo-cropped.mp4')} type="video/mp4" />
+                    <source src={require('./assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
                 </video>
                 <span className="one-head">
                     líderes en calidad de construcción e infraestructura
@@ -20,7 +20,7 @@ function Inicio() {
             <section className="item-two" id="item-two">
                 <h1 className="two-head" id="filosofia"> filosofía</h1>
                 <article className="two-box">
-                    <img src={require("./images/mision-f.JPG")} alt="mision" className="box-img" />
+                    <img src={require("./assets/images/mision-f.JPG")} alt="mision" className="box-img" />
                     <h2 className="box-h2"> Mision</h2>
                     <p className="box-txt">
                         Convertirnos en lideres de la construcción resolviendo las necesidades del cliente y a la par,
@@ -28,7 +28,7 @@ function Inicio() {
                     </p>
                 </article>
                 <article className="two-box">
-                    <img src={require("./images/vision.JPG")} alt="vision" className="box-img" />
+                    <img src={require("./assets/images/vision.JPG")} alt="vision" className="box-img" />
                     <h2 className="box-h2"> Vision</h2>
                     <p className="box-txt">
                         Trabajar de la mano con nuestros clientes para entregarles obras de primer
@@ -36,7 +36,7 @@ function Inicio() {
                     </p>
                 </article>
                 <article className="two-box">
-                    <img src={require("./images/vision-f.JPG")} alt="valores" className="box-img" />
+                    <img src={require("./assets/images/vision-f.JPG")} alt="valores" className="box-img" />
                     <h2 className="box-h2"> Valores</h2>
                     <p className="box-txt">
                         Somos seres muy honestos
@@ -55,7 +55,7 @@ function Inicio() {
                         construcción de inversión privada.
                     </p>
                 </article>
-                <img src={require('./images/mapa1.jpg')} className="three-img"></img>
+                <img src={require('./assets/images/mapa1.jpg')} alt="mapa" className="three-img"></img>
             </section>
             <section className="item-four">
                 <h1 className="four-header">Nuestros Clientes</h1>

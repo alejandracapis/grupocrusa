@@ -1,8 +1,6 @@
 import React from "react";
 
 function Arrows({prevSlide, nextSlide}) {
-    const leftString = "<";
-    const rightString = ">";
     return (
         <div className="arrows">
             <span className="prev" onClick={prevSlide}>

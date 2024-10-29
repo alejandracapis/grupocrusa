@@ -5,8 +5,6 @@ import Arrows from "./Arrows";
 import sliderImage from "./SliderImage";
 import "./Slider.css";
 
-const len = sliderImage.lenght;
-
 function Slider(props) {
     const [activeIndex, setActiveIndex] = useState(0);
 

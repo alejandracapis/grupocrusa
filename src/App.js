@@ -1,14 +1,14 @@
 import './App.css';
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
-import Inicio from './pages/Inicio';
-import Nosotros from './pages/Nosotros';
-import Servicios from './pages/Servicios';
-import Proyectos from './pages/Proyectos';
-import RentaMaquinaria from './pages/RentaMaquinaria';
-import Contacto from './pages/Contacto';
-import NavBar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Inicio from './single-pages/Inicio';
+import Nosotros from './single-pages/Nosotros';
+import Servicios from './single-pages/Servicios';
+import Proyectos from './single-pages/Proyectos';
+import RentaMaquinaria from './single-pages/RentaMaquinaria';
+import Contacto from './single-pages/Contacto';
+import NavBar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
   return(
