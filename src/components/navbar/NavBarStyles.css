@@ -1,0 +1,79 @@
+.grid-navbar {
+    position: relative;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) repeat(5, minmax(0,1fr));
+    grid-template-rows: minmax(0, 8.7vh);
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 70, 70);
+    width: 100%;
+    max-width: 100%;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main-link {
+    background-color: lightgray;
+    height: 100%;
+    max-height: 100%;
+}
+
+.nav-button{
+    cursor: pointer;
+    height: 100%;
+    max-height: 100%;
+    background-color:  lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: start;
+    border-style: none;
+    font-weight: bold;
+}
+
+.nav-logo {
+    max-width: 100%;
+   max-height: 8.7vh;
+   padding: 10%;
+   justify-self: end;
+}
+
+.nav-title {
+    text-decoration: underline;
+    text-decoration-color:  lightgray;
+    color: gray;
+    font-size: calc(0.5vw + 1vh);
+}
+
+.crusa {
+    color: rgb(219, 63, 63);
+    font-size: calc(0.5vw + 1vh);
+}
+
+.link-btn {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(73, 70, 70);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: calc(0.4vw + 1vh);
+
+    &:hover {
+        background-color: rgb(124, 118, 118);
+    }
+    
+    &:active {
+        background-color: rgb(102, 102, 102);
+    }
+}
+
+
