@@ -4,7 +4,7 @@ import Third from "./Third";
 import Fourth from "./Fourth";
 import Fifth from "./Fifth";
 
-export default [
+const sliderImage = [
     {
         title: "First Slide",
         description: "This is the first slider of the carousel",
@@ -31,3 +31,5 @@ export default [
         urls: Fifth(),
     },
 ]
+
+export default sliderImage;
