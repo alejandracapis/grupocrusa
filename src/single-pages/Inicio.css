@@ -71,8 +71,8 @@
   text-decoration: underline;
   text-decoration-color: brown;
   text-decoration-line: overline underline;
-  text-decoration-thickness: 10px;
-  text-underline-offset: 10px;
+  text-decoration-thickness: calc(1vw + 0.8vh);
+  text-underline-offset: calc(1vw + 0.5vh);
 }
 
 .two-box {
@@ -92,6 +92,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .box-h2 {
