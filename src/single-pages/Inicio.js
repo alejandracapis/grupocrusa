@@ -6,6 +6,8 @@ function Inicio() {
     function scrollDown() {
         document.getElementById("item-two").scrollIntoView({behavior: 'smooth'});
     }
+    
+
     return (
         <div className="home-container">
             <section className="item-one">
