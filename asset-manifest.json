@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0faa3f4a.css",
+    "main.js": "/static/js/main.02650810.js",
+    "static/media/ip-video3.MP4": "/static/media/ip-video3.33642709c4e37dcae33e.MP4",
+    "static/media/vision.JPG": "/static/media/vision.d2e95fe422685aeff030.JPG",
+    "static/media/vision-f.JPG": "/static/media/vision-f.8eeca7eea5ff89456a66.JPG",
+    "static/media/mision-f.JPG": "/static/media/mision-f.369dd0e9ae9e04cc091f.JPG",
+    "static/media/bgvideo-cropped.mp4": "/static/media/bgvideo-cropped.f9aa2e9f4ac29f2f678f.mp4",
+    "static/media/fertimex.png": "/static/media/fertimex.859c6d7b3882bb19ed98.png",
+    "static/media/pemex.png": "/static/media/pemex.2bdfef5eaa2a7de98a88.png",
+    "static/media/mapa1.jpg": "/static/media/mapa1.71d7a7037cecf7c9a41c.jpg",
+    "static/media/logo.png": "/static/media/logo.52d6cfd3cc147be56a0f.png",
+    "static/media/gasnieto.png": "/static/media/gasnieto.e7b68126b595bc30e4d1.png",
+    "static/media/scit.png": "/static/media/scit.a5adb8ab75076a921f33.png",
+    "static/media/kfc.png": "/static/media/kfc.a68558113d8fa66022dc.png",
+    "static/media/condumex.png": "/static/media/condumex.e9d860f824d46a27b59f.png",
+    "static/media/grupo_cn.png": "/static/media/grupo_cn.2725b7b0695258402ee0.png",
+    "static/media/nuevocontinente.png": "/static/media/nuevocontinente.d917c6d194f6ffeace4d.png",
+    "static/media/geq.png": "/static/media/geq.edd359364469351f9d27.png",
+    "static/media/freixenet.png": "/static/media/freixenet.556effaea5b2c689e72f.png",
+    "static/media/decote.png": "/static/media/decote.d6ce5a66ecfb49c76cac.png",
+    "static/media/COMCAPUFE.png": "/static/media/COMCAPUFE.5a5cb615e7c8aaffc642.png",
+    "static/media/sjr.png": "/static/media/sjr.38ff0125f83c3159d16b.png",
+    "static/media/huimilpan.png": "/static/media/huimilpan.63134be979aedbf90a03.png",
+    "static/media/conagua.png": "/static/media/conagua.9729466c796afca47360.png",
+    "static/media/gem.png": "/static/media/gem.51dc01e775a335e0a760.png",
+    "static/media/cea.png": "/static/media/cea.f1b0e2ff40fc471078bc.png",
+    "index.html": "/index.html",
+    "main.0faa3f4a.css.map": "/static/css/main.0faa3f4a.css.map",
+    "main.02650810.js.map": "/static/js/main.02650810.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0faa3f4a.css",
+    "static/js/main.02650810.js"
+  ]
+}
