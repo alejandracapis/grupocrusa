@@ -108,3 +108,105 @@
     background-color: rgb(97, 96, 96);
   }
 
+/* Media styles for phones */
+
+
+@media only screen and (max-width: 600px){
+  .slider-container {
+    display: grid;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .inactive {
+      display: none;
+  }
+  
+  .four-slide {
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      display: grid;
+      grid-auto-flow: column;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      height: 100%;
+      max-height: 100%;
+    }
+    
+    .carousel-logos {
+      width: 16vw;
+      max-width: 16vw;
+    }
+  
+    #sjr, #freixenet{
+      width: 12vw;
+      max-width: 12vw;
+  
+    }
+   #huimilpan,  #gasnieto{
+      width: 13vw;
+      max-width: 13vw;
+    }
+  
+    #marques, #condumex, #kfc, #fertimex {
+      width: 12vw;
+      max-width: 12vw;
+    }
+  
+    #grupocn {
+      width: 9vw;
+      max-width: 9vw;
+    }
+  
+    #huimilpan {
+      background-color: navy;
+      border-radius: 5%;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 25%;
+      width: 5%;
+      max-width: 4%;
+      height: 30%;
+      max-height: 30%;
+      text-align: center;
+      align-content: center;
+      font-size: 20px;
+      font-weight: bolder;
+      color: rgb(182, 182, 182);
+      border-radius: 50%;
+      &:hover {
+        color: rgb(97, 96, 96);
+      }
+    }
+ 
+    .all-dots {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      align-items: end;
+    }
+  
+    .dot {
+      cursor: pointer;
+      height: calc(0.5vw + 0.5vh);
+      max-height: calc(0.5vw + 0.5vh);
+      width: calc(0.5vw + 0.5vh);
+      max-width: calc(0.5vw + 0.5vh);
+      margin: 0px 2px;
+      background-color: lightgray;
+      border-radius: 50%;
+      &:hover {
+        background-color: rgb(97, 96, 96);
+      }
+    }
+
+}

@@ -77,3 +77,85 @@
 }
 
 
+/* Media styles for phones */
+
+@media only screen and (max-width: 600px){
+    .grid-navbar {
+        position: relative;
+        z-index: 999;
+        display: grid;
+        grid-template-columns: minmax(0,1.5fr) repeat(5, minmax(0,1fr));
+        grid-template-rows: minmax(0, 5vh);
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(73, 70, 70);
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .sticky-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .main-link {
+        background-color: lightgray;
+        height: 100%;
+        max-height: 100%;
+    }
+    
+    .nav-button{
+        cursor: pointer;
+        height: 100%;
+        max-height: 100%;
+        background-color:  lightgray;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: start;
+        border-style: none;
+        font-weight: bold;
+        padding-right: 1vw;
+    }
+    
+    .nav-logo {
+        max-width: 100%;
+       max-height: 5vh;
+       padding: 10%;
+       justify-self: end;
+    }
+    
+    .nav-title {
+        text-decoration: underline;
+        text-decoration-color:  lightgray;
+        color: gray;
+        font-size: calc(0.6vw + 0.6vh);
+    }
+
+    .crusa {
+        color: rgb(219, 63, 63);
+        font-size: calc(0.6vw + 0.6vh);
+    }
+    
+    .link-btn {
+        cursor: pointer;
+        text-align: center;
+        background-color: rgb(73, 70, 70);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: calc(0.5vw + 0.5vh);
+    
+        &:hover {
+            background-color: rgb(124, 118, 118);
+        }
+        
+        &:active {
+            background-color: rgb(102, 102, 102);
+        }
+    }
+    
+}
