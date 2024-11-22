@@ -39,7 +39,7 @@ function Inicio() {
                     <img src={require("./assets/images/vision-f.JPG")} alt="valores" className="box-img" />
                     <h2 className="box-h2"> Valores</h2>
                     <p className="box-txt">
-                        Somos seres muy honestos
+                    Somos una compañía responsable, honesta, comprometida con la calidad y la seguridad, sentimos pasión por lo que hacemos y eso nos permite fomentar el trabajo en equipo.
                     </p>
                 </article>
             </section>
