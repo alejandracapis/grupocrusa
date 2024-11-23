@@ -198,30 +198,29 @@
     display: grid;
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: 20vh;
     max-height: 100%;
     justify-content: center;
   }
   
   .one-video {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
+    position: absolute;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    max-height: auto;
   }
   
   .one-head {
-    position: absolute;
-    top: 10%;
+    position: relative;
+    width: 60%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    font-size: calc(1vw + 1.2vh);
+    font-size: calc(1vw + 1vh);
   }
   
   #scroll-down {
