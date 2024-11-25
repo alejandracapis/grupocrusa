@@ -1,33 +1,33 @@
 import React, { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
-import Arrows from "./Arrows";
 import sliderImage from "./SliderImage";
-import "./Slider.css";
+import "./stylesSlider.css";
 
 function Slider(props) {
     const [activeIndex, setActiveIndex] = useState(0);
 
 
     useEffect(() => {
-        const interval= setInterval(() => {
-            setActiveIndex(activeIndex === sliderImage.length-1 ? 0 : activeIndex + 1);
+        const interval = setInterval(() => {
+            setActiveIndex(activeIndex === sliderImage.length - 1 ? 0 : activeIndex + 1);
         }, [4000]);
         return () => clearInterval(interval);
     }, [activeIndex]);
 
-    return(
+    return (
         <div className="slider-container">
-            <Arrows
-                prevSlide ={() =>
+            <SliderContent
+                className="slider-content"
+                activeIndex={activeIndex}
+                sliderImage={sliderImage}
+                prevSlide={() =>
                     setActiveIndex(activeIndex < 1 ? sliderImage.length : activeIndex - 1)
                 }
                 nextSlide={() =>
                     setActiveIndex(activeIndex === sliderImage.length ? 0 : activeIndex + 1)
-                }
-                />    
-            <SliderContent className="slider-content" activeIndex={activeIndex} sliderImage={sliderImage} />
-            <Dots className="slider-dots"
+                } />
+            <Dots
                 activeIndex={activeIndex}
                 sliderImage={sliderImage}
                 onclick={(activeIndex) => setActiveIndex(activeIndex)}
@@ -36,4 +36,4 @@ function Slider(props) {
     );
 }
 
-export default Slider; 
+export default Slider;
