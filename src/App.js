@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
-import Inicio from './single-pages/Inicio';
+import Inicio from './single-pages/inicio/Inicio';
 import Nosotros from './single-pages/Nosotros';
 import Servicios from './single-pages/Servicios';
 import Proyectos from './single-pages/Proyectos';

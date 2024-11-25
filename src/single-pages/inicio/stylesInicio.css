@@ -1,0 +1,234 @@
+/* Layout general de la pagina de inicio */
+.home-container {
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(auto, auto));
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+}
+
+/* Sección de video y título principal */
+.item-one {
+  display: grid;
+  grid-template-columns: minmax(10%, 20%) minmax(50%, 60%) minmax(10%, 20%);
+  grid-template-rows: repeat(3, minmax(0, 30%));
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+
+}
+
+.one-video {
+  grid-area: 1 / 1 / 4 / 4;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  overflow: hidden;
+}
+
+.one-head {
+  grid-area: 1 / 2 / 2 / 3 ;
+  z-index: 1;
+  align-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
+}
+
+.scrollDown {
+  grid-area: 2 / 2 / 3 / 3 ;
+  z-index: 1;
+  cursor: pointer;
+  transform: rotate(90deg);
+  font-size: calc(3vw + 3vh);
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+    &:hover {
+      opacity: 0.8;
+    }
+}
+
+/* Sección de filosofía con imagenes */
+.item-two {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-rows: 10% minmax(auto-fit, 5fr);
+  row-gap: 5%;
+  column-gap: 2.5vw;
+  justify-items: center;
+  color: rgb(99, 97, 97);
+  padding: 5% 10%;
+}
+
+.two-head {
+  grid-area: 1 / 1 / 2 / 4;
+  text-transform: uppercase;
+  font-size: calc(2vw + 2vh);
+  align-self: center;
+  text-decoration: underline;
+  text-decoration-color: brown;
+  text-decoration-line: overline underline;
+  text-decoration-thickness: calc(0.5vw + 0.5vh);
+  text-underline-offset: calc(0.5vw + 0.5vh);
+}
+
+.two-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 50%));
+  grid-template-rows: minmax(auto-fit, 2fr) minmax(auto-fit, 1fr) minmax(auto-fit, 1fr);
+  align-content: start;
+  background-color: lightgrey;
+  color: rgb(121, 115, 115);
+  padding-bottom: 1%;
+}
+
+.box-img {
+  grid-area: 1 / 1 / 2 / 3;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.box-h2 {
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  text-transform: uppercase;
+  padding: 10%;
+  background-color: brown;
+  color: white;
+  border-bottom-right-radius: 2vw;
+  font-size: calc(1vw + 1vh);
+}
+
+.box-txt {
+  grid-area: 3 / 1 / 4 / 3;
+  padding: 5% 10% 10%;
+  text-align: start;
+  font-size: calc( 0.8vw + 0.8vh);
+}
+
+/* Sección de presencia nacional con mapa */
+
+.item-three {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 50%));
+  grid-template-rows: minmax(1fr, 1fr) minmax(2fr, 4fr);
+  color: white;
+  text-align: start;
+}
+
+
+.three-head {
+  grid-area: 1 / 1 / 2 / 2;
+  text-transform: uppercase;
+  font-size: calc(2vw + 2vh);
+  background-color: gray;
+  padding: 5% 10% 0;
+}
+
+.three-text {
+  grid-area: 2 / 1 / 3 / 2;
+  font-size: calc(1vw + 1vh);
+  background-color: gray;
+  padding: 1% 10% 5%;
+}
+
+.three-img {
+  grid-area: 1 / 2 / 3 / 2;
+  max-width: 100%;
+  max-height: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* Sección de carousel nuestros clientes */
+.item-four {
+  display: grid;
+  grid-template-rows: minmax(1fr, 2fr) minmax(2fr, 4fr);
+  grid-template-columns: minmax(0,1fr);
+  text-transform: uppercase;
+  row-gap: 20%;
+  padding-bottom: 1%;
+}
+
+.four-header {
+  grid-area: 1 / 1 / 3 / 2;
+  padding-top: 5%;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  align-content: end;
+  font-size: calc(3vw + 2vh);
+}
+
+
+
+/* Media styles */
+/* Media for Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+  .one-head {
+    font-size: calc(1.2vw + 1.2vh);
+    padding-top: 5%;
+  }
+
+  .scrollDown {
+    display: none;
+  }
+
+  /* Sección de filosofía con imagenes */
+  .two-head {
+    font-size: calc(1vw + 1vh);
+    text-decoration-thickness: calc(0.3vw + 0.3vh);
+    text-underline-offset: calc(0.1vw + 0.3vh);
+  }
+
+  .box-h2 {
+    font-size: calc(0.8vw + 0.8vh);
+  }
+
+  .box-txt {
+    font-size: calc( 0.5vw + 0.5vh);
+  }
+
+  /* Sección de presencia nacional con mapa */
+  .three-head {
+    font-size: calc(1vw + 1vh);
+  }
+
+  .three-text {
+    font-size: calc(0.6vw + 0.6vh);
+  }
+
+  /* Sección de carousel nuestros clientes */
+  .four-header {
+    font-size: calc(1vw + 1vh);
+  }
+ }
+
+/* Media for iPads and Tablets */
+@media (min-width: 481px) and (max-width: 768ppx) { }
+
+
+/* Media for small screens and Laptops */
+@media (min-width: 769px) and (max-width: 1024px) { }
+
+/* Media for Desktops and large screens */
+@media (min-width: 1025px) and (max-width: 1200px) { }
+
+/* Media for extra large screens and TVs */
+@media (min-width: 1201px) { }
+
+
