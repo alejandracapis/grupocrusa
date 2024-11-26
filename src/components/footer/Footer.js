@@ -1,12 +1,12 @@
 import './Footer.css';
 
 
-function Footer() {
+const Footer = () => {
     return (
         <div className='footer-container'>
-            <copyright className='copyright'>
+            <h3 className='copyright'>
                 &copy;2024 Grupo Crusa. Todos los derechos reservados
-            </ copyright>
+            </ h3>
             <a className="aviso" href = {require("./avisodeprivacidad.pdf")}>Aviso de Privacidad</a>
         </div>
     );

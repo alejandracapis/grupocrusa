@@ -1,8 +1,8 @@
 import React from "react";
-import "./stylesInicio.css";
+import "./InicioStyles.css";
 import Slider from "../slider/Slider";
 
-function Inicio() {
+const Inicio = () => {
     function scrollDown() {
         document.getElementById("item-two").scrollIntoView({ behavior: 'smooth' });
     }
@@ -10,7 +10,7 @@ function Inicio() {
     return (
         <div className="home-container">
             <section className="item-one">
-                <video loop autoPlay muted className="one-video">
+                <video loop autoPlay muted playsInline className="one-video">
                     <source src={require('../assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
                 </video>
                 <span className="one-head">

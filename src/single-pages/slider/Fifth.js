@@ -1,4 +1,4 @@
-function Fifth() {
+const Fifth = () => {
     return (
         <article className="four-slide slide-five">
             <div className="img-col">

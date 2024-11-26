@@ -1,4 +1,4 @@
-function Fourth() {
+const Fourth = () => {
     return (
         <article className="four-slide slide-four">
             <div className="img-col">

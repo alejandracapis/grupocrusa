@@ -1,6 +1,6 @@
 import React from "react";
 
-function Dots({ activeIndex, onclick, sliderImage}) {
+const Dots = ({ activeIndex, onclick, sliderImage}) => {
     return (
         <div className="all-dots">
             {sliderImage.map((slide, index) => (

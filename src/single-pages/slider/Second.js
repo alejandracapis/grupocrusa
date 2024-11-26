@@ -1,5 +1,5 @@
 
-function Second() {
+const Second = () => {
     return (
         <article className="four-slide slide-two">
             <div className="img-col">

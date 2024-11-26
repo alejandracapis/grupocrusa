@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import sliderImage from "./SliderImage";
-import "./stylesSlider.css";
+import "./SliderStyles.css";
 
-function Slider(props) {
+const Slider = (props) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
 

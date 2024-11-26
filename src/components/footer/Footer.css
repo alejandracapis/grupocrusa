@@ -10,6 +10,7 @@
 
 .copyright {
     color: black;
+    font-weight: normal;
     text-decoration: none;
     font-size: calc(0.8vw + 0.8vh);
 }

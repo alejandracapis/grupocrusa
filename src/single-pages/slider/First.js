@@ -1,4 +1,4 @@
-function First() {
+const First = () => {
     return (
         <article className="four-slide slide-one">
             <div className="img-col">

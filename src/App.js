@@ -7,10 +7,10 @@ import Servicios from './single-pages/Servicios';
 import Proyectos from './single-pages/Proyectos';
 import RentaMaquinaria from './single-pages/RentaMaquinaria';
 import Contacto from './single-pages/Contacto';
-import NavBar from './components/navbar/Navbar';
+import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 
-function App() {
+const App = () => {
   return(
     <div className='App'>
       <nav className='top-navbar'>

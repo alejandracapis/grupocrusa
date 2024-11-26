@@ -1,6 +1,6 @@
 import React from "react";
 
-function SliderContent({ activeIndex, sliderImage, prevSlide, nextSlide }) {
+const SliderContent = ({ activeIndex, sliderImage, prevSlide, nextSlide }) => {
     return (
         <>
             <span className="prev" id="previous" onClick={prevSlide}>
