@@ -2,8 +2,8 @@ import NavLinks from "./NavLinks";
 import './NavBarStyles.css';
 import { MdOutlineMenu } from 'react-icons/md';
 import { useState } from "react";
+import { MdClose } from 'react-icons/md';
 import { Link } from "react-router-dom";
-import { MdClose } from 'react-icons/md'
 
 const MobileNav = () => {
   const [click, setClick] = useState(false);

@@ -4,18 +4,9 @@
 
 .grid-navbar {
     width: 100%;
-}
-
-nav {
     position: relative;
     z-index: 999;
-    display: grid;
-    grid-template-columns: 1fr repeat(auto-fit, minmax(0,1fr));
-    align-items: center;
-    background-color: rgb(73, 70, 70);
-    width: auto;
 }
-
 
 .sticky-nav {
     position: fixed;
@@ -23,20 +14,29 @@ nav {
     left: 0;
 }
 
+nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(auto-fit, minmax(0,1fr));
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: rgb(73, 70, 70);
+    width: auto;
+ }
+
 .nav-button{
     grid-column: 1 / 2;
     background-color: lightgray;
     height: 100%;
     max-height: 100%;
-    align-content: center;
-    justify-content: center;
     cursor: pointer;
-    background-color:  lightgray;
     display: grid;
     grid-auto-flow: column;
+    align-content: center;
+    justify-content: center;
     text-align: start;
     border-style: none;
     font-weight: bold;
+    padding: 1% ;
 }
 
 .nav-logo {
@@ -59,11 +59,10 @@ nav {
 }
 
 .links {
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
-    justify-content: space-evenly;
 }
 
 .link-btn {
@@ -78,7 +77,6 @@ nav {
     &:hover {
         background-color: rgb(124, 118, 118);
     }
-    
     &:active {
         background-color: rgb(102, 102, 102);
     }
@@ -87,14 +85,36 @@ nav {
 /* Media styles for phones */
 /* Media styles */
 /* Media for Mobile Devices */
-/* @media (min-width: 320px) and (max-width: 480px) {
-    .grid-navbar {
+   @media (max-width: 768px){
+    .nav-logo {
+        max-height: 5vh;
+        width: auto;
+        padding: 10%;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
         display: grid;
-        grid-template-columns: 2fr minmax(0, 4fr);
-        grid-template-rows: 5vh;
-        background-color: rgb(73, 70, 70);
-        width: 100%;
-        max-width: 100%;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-content: center;
+        height: 5vh;
+    }
+
+    .HamburgerMenu{
+        grid-column:  2 / 3;
+        cursor: pointer;
+      }
+
+      .nav-button{
+        grid-column: 1 / 2;
+        align-content: center;
+        justify-content: center;
+        text-align: start;
+        height: 5vh;
     }
     
     .nav-logo {
@@ -102,44 +122,20 @@ nav {
         width: auto;
         padding: 5%;
     }
-    
+
     .nav-title {
         align-content: center;
-        font-size: calc(0.5vw + 1vh);
+        text-decoration: underline;
+        text-decoration-color:  lightgray;
+        color: gray;
+        font-size: calc(1vw + 1vh);
     }
     
     .crusa {
-        font-size: calc(0.5vw + 1vh);
+        color: rgb(219, 63, 63);
+        font-size: calc(1vw + 1vh);
     }
     
-    .links {
-        display: none;
-    }
-   } */
-  
-   @media (max-width: 768px){
-    .nav-logo {
-        max-height: 5vh;
-        width: auto;
-        padding: 10%;
-    }
-
-    .desktop-nav{
-        display: none;
-    }
-
-    .mobile-nav{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0,1fr));
-        align-items: center;
-        height: 5vh;
-    }
-
-    .HamburgerMenu{
-        grid-column: end;
-        cursor: pointer;
-      }
-
     .links {
         display: grid;
         grid-auto-flow: row;
@@ -159,59 +155,25 @@ nav {
         background-color: lightgray;
         color: rgb(44, 42, 42);
         font-weight: bold;
-        padding: 10px 50px;
+        padding: 5px 50px;
         border-radius: 10px;
         border-style: none;
         font-size: calc(0.5vw + 1vh);
         &:hover {
             background-color: rgb(124, 118, 118);
         }
-        
         &:active {
             background-color: rgb(102, 102, 102);
         }
     }
-    
-
 }
 
   /* Media for small screens and Laptops */
-  @media (min-width: 769px) and (max-width: 1024px) { 
-    .mobile-nav {
-        display: none;
-    }
-    
-    nav {
-        position: relative;
-        z-index: 999;
-        display: grid;
-        grid-template-columns: 1fr repeat(auto-fit, minmax(0,1fr));
-        align-items: center;
-        background-color: rgb(73, 70, 70);
-        width: auto;
-    }
-    
-    
-    .sticky-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    
-    .nav-button{
-        grid-column: 1 / 2;
-        background-color: lightgray;
-        height: 100%;
-        max-height: 100%;
+  @media (min-width: 769px) and (max-width: 1024px) {
+      .nav-button{
         align-content: center;
         justify-content: center;
-        cursor: pointer;
-        background-color:  lightgray;
-        display: grid;
-        grid-auto-flow: column;
         text-align: start;
-        border-style: none;
-        font-weight: bold;
     }
     
     .nav-logo {
@@ -219,44 +181,25 @@ nav {
         width: auto;
         padding: 10%;
     }
-    
+
     .nav-title {
         align-content: center;
         text-decoration: underline;
         text-decoration-color:  lightgray;
         color: gray;
-        font-size: calc(0.5vw + 1vh);
+        font-size: calc(1.1vw + 1.1vh);
     }
     
     .crusa {
         color: rgb(219, 63, 63);
-        font-size: calc(0.5vw + 1vh);
+        font-size: calc(1.1vw + 1.1vh);
     }
-    
-    .links {
-        grid-column: 2 / 7;
-        display: grid;
-        grid-auto-flow: column;
-        align-content: center;
-        justify-content: space-evenly;
-    }
-    
+
     .link-btn {
-        cursor: pointer;
-        text-align: center;
-        background-color: rgb(73, 70, 70);
-        color: white;
-        padding: 10px 20px;
-        border-radius: 10px;
-        border-style: none;
-        font-size: calc(0.5vw + 1vh);
-        &:active {
-            background-color: rgb(102, 102, 102);
-            transition: 0.3s;
-        }
-    }
+        font-size: calc(1vw + 1vh);
+   }
   }
-  
+
   /* Media for Desktops and large screens */
   @media (min-width: 1025px) and (max-width: 1200px) { }
   

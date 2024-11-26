@@ -1,6 +1,6 @@
 import React from 'react';
+import NavLinks from './NavLinks';
 import { Link } from 'react-router-dom';
-import NavBar from './NavLinks';
 import "./NavBarStyles.css";
 
 
@@ -13,7 +13,7 @@ const DesktopNav = () => {
                     <span className='nav-title'>Grupo<span className='crusa'>CRUSA</span></span>
                 </button>
             </Link>
-            <NavBar />
+            <NavLinks />
         </nav>
     )
 }

@@ -17,7 +17,6 @@
   max-width: 100%;
   height: auto;
   max-height: auto;
-
 }
 
 .one-video {
@@ -220,11 +219,61 @@
  }
 
 /* Media for iPads and Tablets */
-@media (min-width: 481px) and (max-width: 768ppx) { }
+@media (min-width: 481px) and (max-width: 768px) { 
+    .one-head {
+      font-size: calc(1.5vw + 1.5vh);
+      padding-top: 5%;
+    }
+  
+    .scrollDown {
+      display: none;
+    }
+  
+    /* Sección de filosofía con imagenes */
+    .two-head {
+      font-size: calc(1vw + 1vh);
+      text-decoration-thickness: calc(0.3vw + 0.3vh);
+      text-underline-offset: calc(0.1vw + 0.3vh);
+    }
+  
+    .box-h2 {
+      font-size: calc(0.8vw + 0.8vh);
+    }
+  
+    .box-txt {
+      font-size: calc( 0.5vw + 0.5vh);
+    }
+  
+    /* Sección de presencia nacional con mapa */
+    .three-head {
+      font-size: calc(1vw + 1vh);
+    }
+  
+    .three-text {
+      font-size: calc(0.6vw + 0.6vh);
+    }
+  
+    /* Sección de carousel nuestros clientes */
+    .four-header {
+      font-size: calc(1vw + 1vh);
+    }  
+}
+
 
 
 /* Media for small screens and Laptops */
-@media (min-width: 769px) and (max-width: 1024px) { }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .one-head {
+    font-size: calc(1.5vw + 1.5vh);
+    padding-top: 5%;
+  }
+
+  .scrollDown {
+    display: none;
+  }
+
+
+ }
 
 /* Media for Desktops and large screens */
 @media (min-width: 1025px) and (max-width: 1200px) { }
