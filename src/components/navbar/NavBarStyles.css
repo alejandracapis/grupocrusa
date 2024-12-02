@@ -102,10 +102,12 @@ nav {
         width: 100%;
         position: relative;
         z-index: 999;
+        height: 5vh;
     }
 
     .HamburgerMenu{
         grid-column:  2 / 3;
+        height: 5vh;
         cursor: pointer;
       }
 
