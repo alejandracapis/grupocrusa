@@ -261,7 +261,6 @@ nav {
 
     .link-btn {
         cursor: pointer;
-        z-index: 4;
         text-align: center;
         background-color: lightgray;
         color: rgb(44, 42, 42);
