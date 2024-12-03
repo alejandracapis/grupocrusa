@@ -184,6 +184,16 @@
     padding-top: 5%;
   }
 
+  .one-video {
+    grid-area: 1 / 1 / 4 / 4;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    overflow: hidden;
+  }
+
   .scrollDown {
     display: none;
   }
@@ -225,6 +235,16 @@
       padding-top: 5%;
     }
   
+    .one-video {
+      grid-area: 1 / 1 / 4 / 4;
+      object-fit: cover;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: auto;
+      overflow: hidden;
+    }
+
     .scrollDown {
       display: none;
     }

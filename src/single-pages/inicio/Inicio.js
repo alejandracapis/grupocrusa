@@ -12,9 +12,9 @@ const Inicio = () => {
             <section className="item-one">
                 <video
                 autoPlay
-                muted
+                muted="true"
                 loop
-                playsInline
+                playsInline="true"
                 preload="none"
                 className="one-video">
                     <source src={require('../assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
