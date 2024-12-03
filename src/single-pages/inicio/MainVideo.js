@@ -5,12 +5,14 @@ const MainVideo = () => {
     <div className="one-video">
       <video
         autoPlay
-        muted="true"
+        muted={true}
         loop
-        playsInline="true"
+        playsInline={true}
         preload="none"
+        allowsInlineMediaPlayback={true}
+        mediaPlaybackRequiresUserActions={false}
         className="one-video">
-        <source src={require('../assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
+        <source src={require('./bgvideo-cropped.mp4')} type="video/mp4" />
       </video>
     </div>
   )
