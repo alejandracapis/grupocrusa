@@ -22,6 +22,7 @@ nav {
     align-items: center;
     background-color: rgb(73, 70, 70);
     width: auto;
+    height: 10vh;
  }
 
 .nav-button{
@@ -159,6 +160,7 @@ nav {
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
         background-color: lightgrey;
+        z-index: 3;
     }
 
     .link-btn {

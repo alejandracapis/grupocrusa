@@ -192,6 +192,7 @@
     height: auto;
     max-height: auto;
     overflow: hidden;
+    z-index: 1;
   }
 
   .scrollDown {
@@ -203,6 +204,7 @@
     font-size: calc(1vw + 1vh);
     text-decoration-thickness: calc(0.3vw + 0.3vh);
     text-underline-offset: calc(0.1vw + 0.3vh);
+    z-index: 2;
   }
 
   .box-h2 {
@@ -243,6 +245,7 @@
       height: auto;
       max-height: auto;
       overflow: hidden;
+      z-index: 1;
     }
 
     .scrollDown {
@@ -254,6 +257,7 @@
       font-size: calc(1vw + 1vh);
       text-decoration-thickness: calc(0.3vw + 0.3vh);
       text-underline-offset: calc(0.1vw + 0.3vh);
+      z-index: 2;
     }
   
     .box-h2 {
