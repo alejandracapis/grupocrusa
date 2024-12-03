@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.9afb23c7.css",
-    "main.js": "/static/js/main.08ac474e.js",
+    "main.css": "/static/css/main.603fa95e.css",
+    "main.js": "/static/js/main.d7720c46.js",
     "static/media/ip-video3.MP4": "/static/media/ip-video3.33642709c4e37dcae33e.MP4",
     "static/media/vision.JPG": "/static/media/vision.d2e95fe422685aeff030.JPG",
     "static/media/vision-f.JPG": "/static/media/vision-f.8eeca7eea5ff89456a66.JPG",
     "static/media/mision-f.JPG": "/static/media/mision-f.369dd0e9ae9e04cc091f.JPG",
     "static/media/bgvideo-cropped.mp4": "/static/media/bgvideo-cropped.f9aa2e9f4ac29f2f678f.mp4",
+    "static/media/bgvideo-cropped.gif": "/static/media/bgvideo-cropped.15049105d660b962443b.gif",
     "static/media/fertimex.png": "/static/media/fertimex.859c6d7b3882bb19ed98.png",
     "static/media/avisodeprivacidad.pdf": "/static/media/avisodeprivacidad.fa37f85e6395bf14fcbf.pdf",
     "static/media/pemex.png": "/static/media/pemex.2bdfef5eaa2a7de98a88.png",
@@ -28,11 +29,11 @@
     "static/media/gem.png": "/static/media/gem.51dc01e775a335e0a760.png",
     "static/media/cea.png": "/static/media/cea.f1b0e2ff40fc471078bc.png",
     "index.html": "/index.html",
-    "main.9afb23c7.css.map": "/static/css/main.9afb23c7.css.map",
-    "main.08ac474e.js.map": "/static/js/main.08ac474e.js.map"
+    "main.603fa95e.css.map": "/static/css/main.603fa95e.css.map",
+    "main.d7720c46.js.map": "/static/js/main.d7720c46.js.map"
   },
   "entrypoints": [
-    "static/css/main.9afb23c7.css",
-    "static/js/main.08ac474e.js"
+    "static/css/main.603fa95e.css",
+    "static/js/main.d7720c46.js"
   ]
 }
