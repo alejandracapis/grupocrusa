@@ -121,7 +121,6 @@ nav {
 
       .nav-button{
         grid-column: 1 / 2;
-        display: inline-block;
         align-content: center;
         justify-content: center;
         text-align: start;
@@ -136,7 +135,7 @@ nav {
     }
 
     .nav-title {
-        align-content: center;
+        align-self: center;
         text-decoration: underline;
         text-decoration-color:  lightgray;
         color: gray;
@@ -144,7 +143,7 @@ nav {
     }
     
     .crusa {
-        align-content: center;
+        align-self: center;
         color: rgb(219, 63, 63);
         font-size: calc(1vw + 1vh);
     }
