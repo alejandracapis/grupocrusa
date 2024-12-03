@@ -1,6 +1,7 @@
 import React from "react";
 import "./InicioStyles.css";
 import Slider from "../slider/Slider";
+import MainVideo from "./MainVideo"
 
 const Inicio = () => {
     function scrollDown() {
@@ -10,15 +11,7 @@ const Inicio = () => {
     return (
         <div className="home-container">
             <section className="item-one">
-                <video
-                autoPlay
-                muted="true"
-                loop
-                playsInline="true"
-                preload="none"
-                className="one-video">
-                    <source src={require('../assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
-                </video>
+                <MainVideo />
                 <span className="one-head">
                     líderes en calidad de construcción e infraestructura
                 </span>
