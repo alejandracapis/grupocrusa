@@ -215,7 +215,7 @@ nav {
         position: absolute;
         top: 10vh;
         right: 0;
-        height: auto;
+        height: 20vh;
         width: auto;
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
@@ -225,6 +225,8 @@ nav {
 
     .link-btn {
         font-size: calc(1vw + 1vh);
+        text-align: center;
+        padding: 5px 20px;
    }
   }
 
