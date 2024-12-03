@@ -19,11 +19,9 @@ const MainVideo = () => {
         muted
         playsInline
         preload='auto'
-        allowsInlineMediaPlayback={true}
-        mediaPlaybackRequiresUserActions={false}
         className="one-video">
         <source src={require('./bgvideo-cropped.mp4')} />
-        <source src={require('./bgvideo-cropped.mp4')} onerror={fallback} />
+        <source src={require('./bgvideo-cropped.mp4')} onError={fallback} />
         <img src={require('./bgvideo-cropped.gif')} alt='main gif' />
       </video>
       <span className="one-head">
