@@ -22,7 +22,7 @@ nav {
     align-items: center;
     background-color: rgb(73, 70, 70);
     width: auto;
-    height: 10vh;
+    height: auto;
  }
 
 .nav-button{
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-title {
-    align-content: center;
+    align-self: center;
     text-decoration: underline;
     text-decoration-color:  lightgray;
     color: gray;
@@ -56,6 +56,7 @@ nav {
 }
 
 .crusa {
+    align-self: center;
     color: rgb(219, 63, 63);
     font-size: calc(0.5vw + 1vh);
 }
@@ -189,13 +190,6 @@ nav {
         text-align: start;
     }
 
-    .grid-navbar {
-        width: 100%;
-        height: 10vh;
-        background-color: none;
-    }    
-
-    
     .nav-logo {
         max-height: 10vh;
         width: auto;
@@ -213,6 +207,20 @@ nav {
     .crusa {
         color: rgb(219, 63, 63);
         font-size: calc(1.1vw + 1.1vh);
+    }
+
+    .links {
+        display: grid;
+        grid-auto-flow: row;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        height: auto;
+        width: auto;
+        border-bottom-left-radius: 1vh;
+        border-bottom-right-radius: 1vh;
+        background-color: lightgrey;
+        z-index: 3;
     }
 
     .link-btn {
