@@ -10,7 +10,13 @@ const Inicio = () => {
     return (
         <div className="home-container">
             <section className="item-one">
-                <video loop autoPlay muted playsInline preload="metadata" className="one-video">
+                <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="none"
+                className="one-video">
                     <source src={require('../assets/videos/bgvideo-cropped.mp4')} type="video/mp4" />
                 </video>
                 <span className="one-head">

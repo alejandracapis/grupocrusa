@@ -92,6 +92,7 @@ nav {
 
     .grid-navbar {
         height: 5vh;
+        background-color: none;
     }
 
     .mobile-nav {
@@ -99,9 +100,6 @@ nav {
         grid-auto-flow: column;
         justify-content: space-between;
         align-content: center;
-        width: 100%;
-        position: relative;
-        z-index: 999;
         height: 5vh;
     }
 
@@ -180,6 +178,7 @@ nav {
     .grid-navbar {
         width: 100%;
         height: 10vh;
+        background-color: none;
     }    
 
     
