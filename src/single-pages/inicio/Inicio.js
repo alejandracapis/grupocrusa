@@ -4,19 +4,9 @@ import Slider from "../slider/Slider";
 import MainVideo from "./MainVideo"
 
 const Inicio = () => {
-    function scrollDown() {
-        document.getElementById("item-two").scrollIntoView({ behavior: 'smooth' });
-    }
-
     return (
         <div className="home-container">
-            <section className="item-one">
-                <MainVideo />
-                <span className="one-head">
-                    líderes en calidad de construcción e infraestructura
-                </span>
-                <button id="scroll-down" className="scrollDown" type="button" onClick={scrollDown}>&raquo;</button>
-            </section>
+            <MainVideo />
             <section className="item-two" id="item-two">
                 <h1 className="two-head" id="filosofia"> filosofía</h1>
                 <article className="two-box">
