@@ -91,6 +91,14 @@ nav {
         display: none;
     }
 
+    .mobile-nav {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-content: center;
+        height: 5vh;
+    }
+
     .sticky-nav {
         position: fixed;
         top: 0;
@@ -104,14 +112,6 @@ nav {
         align-content: center;
      }
 
-    .mobile-nav {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        align-content: center;
-        height: 5vh;
-    }
-
     .HamburgerMenu{
         grid-column:  2 / 3;
         height: 5vh;
@@ -120,6 +120,7 @@ nav {
 
       .nav-button{
         grid-column: 1 / 2;
+        display: inline-block;
         align-content: center;
         justify-content: center;
         text-align: start;
@@ -142,6 +143,7 @@ nav {
     }
     
     .crusa {
+        align-content: center;
         color: rgb(219, 63, 63);
         font-size: calc(1vw + 1vh);
     }
